@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.parallax-1 {
+  height: 100vh;
+  background: url(ayush-kumar-HTIBjxiF7nM-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.parallax-1 h1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.parallax-2 h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: #fff;
+  padding: 10px 25px;
+}
+
+.parallax-1 p,
+.parallax-2 p {
+  text-align: justify;
+  background-color: black;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax-2 {
+  height: 100vh;
+  background: url(mos-design-V9WkSZx4TLc-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}

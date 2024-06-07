@@ -1,0 +1,195 @@
+:root {
+  --primary-color: #e50914;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Hero Section Start */
+.hero {
+  min-height: 100vh;
+  background-image: url("Netflix-Hintergrund-1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 1, 3, 0.7) 55%,
+    rgba(1, 1, 3, 0.7) 55%
+  );
+}
+
+/* Navbar Start */
+.hero .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+}
+
+.hero .navbar .navbar-logo span {
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: -3px;
+  display: inline-block;
+}
+
+.hero .navbar .navbar-logo .n {
+  transform: rotate3d(90deg);
+}
+
+.hero .navbar .navbar-logo .e {
+  transform: rotateY(-35deg);
+}
+
+.hero .navbar .navbar-logo .t {
+  transform: rotateY(-30deg);
+}
+
+.hero .navbar .navbar-logo .f {
+  transform: rotateY(-35deg);
+}
+
+.hero .navbar .navbar-logo .l {
+  transform: rotateY(-25deg);
+}
+
+.hero .navbar .navbar-logo .i {
+  transform: rotateY(-20deg);
+}
+
+.hero .navbar .navbar-logo .x {
+  transform: rotateY(-15deg);
+}
+
+.hero .navbar .navbar-extra form select {
+  padding: 0.4rem 1.6rem;
+  border-radius: 5px;
+  margin: 0 1.2rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(35, 35, 36, 0.5);
+}
+
+.hero .navbar .navbar-extra form button {
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 7px;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.hero .navbar .navbar-extra form button:hover,
+.hero .content .email-box .email-box-content button:hover {
+  background-color: rgba(229, 9, 20, 0.2);
+}
+
+.hero .navbar .navbar-extra span {
+  position: absolute;
+  font-size: 1rem;
+  top: 0.6rem;
+  left: 1.6rem;
+  color: #fff;
+}
+
+/* Content Start */
+.hero .content {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .content .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .content .title h1,
+.hero .content .title p,
+.hero .navbar .navbar-extra form,
+.hero .content .email-box,
+.hero .navbar .navbar-logo {
+  position: relative;
+}
+
+.hero .content .title h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hero .content .title p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.hero .content .title p:nth-child(2) {
+  letter-spacing: -1px;
+}
+
+.hero .content .title p:nth-child(3) {
+  letter-spacing: -1px;
+  font-size: 1.2rem;
+}
+
+.hero .content .email-box .email-box-content {
+  display: flex;
+}
+
+.hero .content .email-box .email-box-content input {
+  width: 30rem;
+  height: 4rem;
+  background-color: rgba(35, 35, 36, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 3px;
+  margin-right: 1rem;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .content .email-box .email-box-content button {
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .content .email-box .email-box-content button span {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 100;
+}
